@@ -1,6 +1,7 @@
 {
   "name": "react-seo",
   "version": "0.1.0",
+  "homepage": "https://bogdanstojanovic.github.io/reactseo/",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.7.0"
