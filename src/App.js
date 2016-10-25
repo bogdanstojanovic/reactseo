@@ -1,21 +1,20 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component,PropTypes } from 'react';
+
+import Users from './components/Users';
 
 class App extends Component {
+  constructor(props){
+    super(props)
+  }
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        {this.props.children}
       </div>
     );
   }
 }
-
+App.propTypes = {
+  children: PropTypes.object.isRequired
+};
 export default App;
